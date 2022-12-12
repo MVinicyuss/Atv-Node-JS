@@ -1,0 +1,40 @@
+const {DataTypes} = require('sequelize')
+
+const Usuarios = () => ({
+    id:{
+        type:       DataTypes.INTEGER,
+        primaryKey: true,
+        allowNull:  false,
+        unique:     true,
+    },
+    nome:{
+        type:       DataTypes.INTEGER,
+        allowNull:  false,
+
+    },
+    senha:{
+        type:       DataTypes.STRING,
+        allowNull:  false
+    },
+    email:{
+        type:       DataTypes.TEXT,        
+    },
+    cpf:{
+        type:       DataTypes.INTEGER,
+        allowNull:  false
+    },
+    cep:{
+        type:       DataTypes.INTEGER,
+        allowNull:  false
+    },
+    telefone:{
+        type:       DataTypes.INTEGER,
+        allowNull:  false
+    },
+    dataNascimento:{
+        type:       DataTypes.INTEGER,
+        allowNull:  false
+    }
+})
+
+module.exports = Usuarios
